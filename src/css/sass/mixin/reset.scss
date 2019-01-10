@@ -1,0 +1,37 @@
+@import "../variables";
+/*
+输入框提示文字颜色
+*/
+input,textarea{
+  border:none;
+  width: 100%;
+  font-size: 14px;
+  background: transparent;
+  resize: none;
+  font-family: $font-family-serif;
+  &:focus{
+    outline: none;
+  }
+  webkit-appearance:none;
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none !important;
+    margin: 0;
+  }
+;
+}
+input,textarea{
+  &::-webkit-input-placeholder{
+    color: $tip;
+  }
+}
+/*
+ 变量
+*/
+a{
+  text-decoration: none;
+  color:$info;
+  &:active,&:hover{
+    text-decoration: none !important;
+  }
+}

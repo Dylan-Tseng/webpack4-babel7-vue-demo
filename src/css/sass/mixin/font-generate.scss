@@ -1,0 +1,9 @@
+//generate fontsize 10- 30
+@import "../variables";
+@for $fontSize from 10 through 30{
+  //@if $fontSize%2 == 0{
+    .f#{$fontSize}{
+      font-size: $fontSize + px;
+    }
+  //}
+}

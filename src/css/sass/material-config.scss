@@ -1,0 +1,24 @@
+@import "~vue-material/dist/theme/engine"; // Import the theme engine
+@include md-register-theme("default", (
+       // primary: #3399FF, // The primary color of your brand
+));
+@import "~vue-material/dist/components/mdDialog/theme"; // Apply the Button theme
+.md-button:not([disabled]).md-focused:before, .md-button:not([disabled]):active:before, .md-button:not([disabled]):hover:before{
+  background-color:transparent;
+}
+.md-menu-content-container{
+  background-color: #fff;
+
+}
+.md-field{
+  margin: 0;
+  padding: 0;
+  min-height: 0;
+}
+.md-dialog{
+  min-width: 90%;
+}
+.md-overlay{
+  background: rgba(0, 0, 0, 0.3);
+//  transition: none;
+}
